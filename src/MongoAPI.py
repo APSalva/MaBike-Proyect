@@ -1,7 +1,6 @@
 # Importamos librerias necesarias 
 import requests
 import json
-
 # Acceder a la base de datos desde la API de Mongo
 def ObtenerJson():
   url = "https://data.mongodb-api.com/app/data-aeqmn/endpoint/data/v1/action/find"
@@ -24,7 +23,7 @@ def ObtenerJson():
   result = json.loads(result)
 
   f = open("Database/bikes.json", "w", encoding="UTF-8")
-  json.dump(result["documents"], f, ensure_ascii=False)
+  json.dump(result["documents"], f, ensure_ascii=False, indent=4)
   f.close()
 
 ObtenerJson()
