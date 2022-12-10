@@ -4,5 +4,8 @@ from CrearArchivo import *
 
 # Creamos una función para crear el indice del html
 def CrearIndiceHTML():
-    CrearArchivo("docs/index.html",ObtenerIndiceHTML())
+    try:
+        CrearArchivo("docs/index.html",ObtenerIndiceHTML())
+    except TimeoutError:
+        print("Tiempo de espera agotado")
 CrearIndiceHTML()
