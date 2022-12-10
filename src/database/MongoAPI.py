@@ -3,7 +3,7 @@ import requests
 import json
 # Acceder a la base de datos desde la API de Mongo
 def ObtenerJson():
-  url = "https://data.mongodb-api.com/app/data-aeqmn/endpoint/data/v1/action/find"
+  url = "https://data.mongodb-api.com/ap/data-aeqmn/endpoint/data/v1/action/find"
   payload = json.dumps({
       "collection": "bikes",
       "database": "bike_database",
@@ -22,7 +22,7 @@ def ObtenerJson():
   result = response.text
   result = json.loads(result)
 
-  f = open("Database/bikes.json", "w", encoding="UTF-8")
+  f = open("JSON/bikes.json", "w", encoding="UTF-8")
   json.dump(result["documents"], f, ensure_ascii=False, indent=4)
   f.close()
 

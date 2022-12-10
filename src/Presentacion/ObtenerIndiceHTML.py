@@ -4,7 +4,9 @@ from diccionario import *
 
 # Creamos una función en el que haremos el HTML del indice
 def ObtenerIndiceHTML():
-    indexhtml = f'''<!-- HTML de Mabike -->
+    # Hacer un try
+    try:
+        indexhtml = f'''<!-- HTML de Mabike -->
 <!DOCTYPE html> 
 <html lang="es">
     <head>
@@ -32,7 +34,7 @@ def ObtenerIndiceHTML():
         <!--Titulo-->
         <h1>MaBike</h1>
         <!--Productos separados en secciones-->'''
-    for value in Diccionario_JSON():
+        for value in Diccionario_JSON():
             img_bici = value["img"]
             indexhtml +=f'''
     <section>
@@ -40,10 +42,20 @@ def ObtenerIndiceHTML():
             <img src= "{img_bici}",width="200" height="200" alt="Bici de carretera de aluminio">
         </div>
     </section>'''
-    indexhtml+=f'''
+        indexhtml+=f'''
     <footer id="main-footer">
         <p>Creado por <a href="mailto:Anaperez@gmail.com">Ana Perez</a> y <a href="mailto:jtur@cifpfbmoll.eu">Juan Tur</a></p>
     </footer>
     </body>
 </html>'''
-    return indexhtml
+    # Excepciones 
+    except KeyError:
+        print("El valor no es correcto")
+    except TypeError: 
+        print("El nombre del archivo o de la ruta es incorrecto")
+    except TimeoutError:
+        print("El tiempo de espera se ha agotado")
+
+    # Si todo es correcto que continue 
+    else:    
+        return indexhtml
