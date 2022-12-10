@@ -1,6 +1,12 @@
 import json
 
 def Diccionario_JSON():
-    with open("Database/bikes.json") as json_file:
-        diccionario = json.load(json_file)
-    return diccionario
+    try: 
+        with open("JSON/bikes.json") as json_file:
+            diccionario = json.load(json_file)
+    except FileNotFoundError: 
+        print("No se encuentra el archivo JSON")
+    except UnboundLocalError:
+        print("El archivo no tiene contenido")
+    else:
+        return diccionario
