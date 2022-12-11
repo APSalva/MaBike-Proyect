@@ -1,4 +1,7 @@
+from CrearArchivo import *
 
+def ObtenerCarritoVacio():
+    carritovacio = f"""
 <!DOCTYPE html>
 <html lang="es">
     <head>
@@ -36,4 +39,15 @@
             <img class="carrito-vacio" src="img/carrito-vacio.png" weight="900" height="800" alt="carrito-vacio">
         </div>
     </body>
-</html>
+</html>"""
+    CrearArchivo("docs/Carrito-vacio.html",carritovacio)
+ObtenerCarritoVacio()
+    
+    
+    
+    
+    
+    
+    
+    
+    
