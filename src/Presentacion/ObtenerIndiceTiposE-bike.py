@@ -1,7 +1,14 @@
+# Importamos nuestras funciones
+from CrearArchivo import *
+from diccionario import *
+
+# Creamos una funcion que cree la página de las bicis
+def ObtenerIndiceTiposEbike():
+    indextiposebike = f"""
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <title>MaBike-Bicicletas de Carretera</title>
+        <title>MaBike-Bicicletas de Ebikes</title>
         <meta charset="UTF-8">
         <meta name="description" content="La mejor web de bicis de Mallorca">
         <meta name="author" content="Juan Tur y Ana Pérez">
@@ -30,7 +37,7 @@
                     </ul>
                 </nav>
             </header>
-            <div class="header-index4">
+            <div class="header-index5">
                 <h1>MaBike</h1>
                 <p>Mallorca Rental Bike</p>
             </div>
@@ -44,61 +51,37 @@
             </div>
         <!--lista de bicis-->
         <div class="segundo-header">
-            <p class="header-bicis">Bicicletas de Ciudad</p>
+            <p class="header-bicis">E-Bikes</p>
         </div>
         <div class="tienda">
             <div class="fila">
-    
+    """
+    # BICICLETA MTB
+    for value in Diccionario_JSON():
+        if value["tipo"] == "City bike e-bike" or value["tipo"] == "Mtb e-bike" or value["tipo"] == "Carretera e-bike":
+            img_bici = value["img"]
+            nombre_bici = value["nombre"]
+            tipo_bici = value["tipo"]
+            precio_alquiler_bici = "15€"
+            indextiposebike += f"""
                 <div class="columna-bici1">
                     <div class="foto">
-                        <a href=""><img src="https://contents.mediadecathlon.com/m5419555/k$1a25a4a575387a8eef87a6174396db0a/sq/bicicleta-paseo-city-classic-26-aluminio-shimano-18v.jpg?format=auto&f=800x0" width="250px" height="250px"></a>
-                        <a href=""><h4>Bicicleta Paseo City Classic 26, Aluminio , SHIMANO 18V</h4></a>
+                        <a href=""><img src="{img_bici}" width="250px" height="250px"></a>
+                        <a href=""><h4>{nombre_bici}</h4></a>
                         <br>
                         <h4>Precio de alquiler</h4>    
                         <ul class="bk1">
-                            <li><span><a href="">City bike</a></span></li>
-                            <li><span class="precio"><a href="">15€</a></span></li>     
+                            <li><span><a href="">{tipo_bici}</a></span></li>
+                            <li><span class="precio"><a href="">{precio_alquiler_bici}</a></span></li>     
                         </ul>
                     </div>
-                </div>
-                <div class="columna-bici1">
-                    <div class="foto">
-                        <a href=""><img src="https://cdn.shopify.com/s/files/1/0290/9382/2538/products/1_02978f38-fe72-47eb-adea-c489972acc2f_510x@2x.progressive.jpg?v=1620637264" width="250px" height="250px"></a>
-                        <a href=""><h4>Bicicleta Paseo City Classic 28, Aluminio , SHIMANO 18V</h4></a>
-                        <br>
-                        <h4>Precio de alquiler</h4>    
-                        <ul class="bk1">
-                            <li><span><a href="">City bike</a></span></li>
-                            <li><span class="precio"><a href="">15€</a></span></li>     
-                        </ul>
-                    </div>
-                </div>
-                <div class="columna-bici1">
-                    <div class="foto">
-                        <a href=""><img src="https://weareyouin.com/uploads/image/61c0742ac9aa4_LA_03.jpg" width="250px" height="250px"></a>
-                        <a href=""><h4>Bicicleta elÃ©ctrica - Youin You-Ride Los Angeles, 250W, 25km/h, Shimano de 7 vel., 26, Pantalla, Blanco</h4></a>
-                        <br>
-                        <h4>Precio de alquiler</h4>    
-                        <ul class="bk1">
-                            <li><span><a href="">City bike e-bike</a></span></li>
-                            <li><span class="precio"><a href="">15€</a></span></li>     
-                        </ul>
-                    </div>
-                </div>
-                <div class="columna-bici1">
-                    <div class="foto">
-                        <a href=""><img src="https://cdn.deporvillage.com/cdn-cgi/image/f=auto,q=75,fit=contain,background=white/product/con-320460az_001.jpg" width="250px" height="250px"></a>
-                        <a href=""><h4>Bicicleta elÃ©ctrica Conor - WRC Bali E-City 28 azul</h4></a>
-                        <br>
-                        <h4>Precio de alquiler</h4>    
-                        <ul class="bk1">
-                            <li><span><a href="">City bike e-bike</a></span></li>
-                            <li><span class="precio"><a href="">15€</a></span></li>     
-                        </ul>
-                    </div>
-                </div>
+                </div>"""
+    indextiposebike += f"""
             </div>
         </div>                    
     </body>
     <footer id="main-footer"><p> Creado por <a href="mailto:jtur@cifpfbmoll.eu"> Juan Tur </a> y <a href="mailto:aperezsalva@cifpfbmoll.eu"> Ana Pérez Salvà </a></p></footer>
-</html>
+</html>"""
+    CrearArchivo("docs/index-EBikes.html",indextiposebike)
+
+ObtenerIndiceTiposEbike()
