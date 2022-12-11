@@ -174,7 +174,7 @@ ul.barraNav li a:hover{
     width: 100%;
     padding: 60px 0;
     text-align: center;
-    background: url('../img/headerbanner9.jpg');
+    background: url('./Img/headerbanner9.jpg');
     background-size: 100%;
     color:white;
 }
@@ -182,7 +182,7 @@ div.header-index2{
     width: 100%;
     padding: 60px 0;
     text-align: center;
-    background: url('../img/carretera-banner.jpg');
+    background: url('./Img/carretera-banner.jpg');
     background-size: 100%;
     color:white;
     background-size: cover;
@@ -191,7 +191,7 @@ div.header-index3{
     width: 100%;
     padding: 60px 0;
     text-align: center;
-    background: url('../img/headermallorca5.jpg');
+    background: url('./Img/headermallorca5.jpg');
     background-size: 100%;
     color:white;
     background-size: cover;
@@ -200,7 +200,7 @@ div.header-index4{
     width: 100%;
     padding: 60px 0;
     text-align: center;
-    background: url('../img/headermallorca4.jpg');
+    background: url('./Img/headermallorca4.jpg');
     background-size: 100%;
     color:white;
     background-size: cover;
@@ -209,7 +209,7 @@ div.header-index5{
     width: 100%;
     padding: 60px 0;
     text-align: center;
-    background: url('../img/headermallorca8.jpg');
+    background: url('./Img/headermallorca8.jpg');
     background-size: 100%;
     color:white;
     background-size: cover;
