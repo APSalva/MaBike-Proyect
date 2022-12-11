@@ -1,4 +1,7 @@
+from CrearArchivo import * 
 
+def ObtenerFormulario():
+    formulario = f"""
 <!DOCTYPE html>
 <html lang="es">
     <head>
@@ -44,4 +47,6 @@
             </div>
         </section>
     </body>
-</html>
+</html>"""
+    CrearArchivo("docs/formulario-registro.html",formulario)
+ObtenerFormulario()
