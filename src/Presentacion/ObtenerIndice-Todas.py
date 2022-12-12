@@ -61,7 +61,7 @@ def ObtenerIndiceTodas():
         tipo_bici = value["tipo"]
         precio_alquiler = "15€"
         id_bici = value["_id"]
-        link = f"""/docs/BicisUnicas/PagBici_{id_bici}.html"""
+        link = f"""/docs/BicisUnicas/PagBici-{id_bici}.html"""
         indicetodas += f"""
                 <div class="columna-bici1">
                     <div class="foto">
