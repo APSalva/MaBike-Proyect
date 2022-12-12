@@ -40,6 +40,7 @@ def CrearBiciUnica():
                 </nav>
             </header>
         """
+        id_bici = value["_id"]
         img_bici = value["img"]
         nombre_bici = value["nombre"]
         marca_bici = value["marca"]
@@ -91,7 +92,6 @@ def CrearBiciUnica():
     </body>
 </html>  
         """
-        contador += 1
-        CrearArchivo(f"""docs/BicisUnicas/PagBici{contador}.html""",Pag_Bici_Unica)
+        CrearArchivo(f"""docs/BicisUnicas/PagBici_{id_bici}.html""",Pag_Bici_Unica)
 
 CrearBiciUnica()
