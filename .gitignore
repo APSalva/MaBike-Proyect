@@ -3,3 +3,4 @@ __init__.py
 pytest.ini
 .pytest.cache
 env
+.vscode
