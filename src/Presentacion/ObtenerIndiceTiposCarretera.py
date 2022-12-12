@@ -61,7 +61,7 @@ def ObtenerIndiceTiposCarretera():
         tipo_bici = value["tipo"]
         precio_alquiler_bici = "15€"
         id_bici = value["_id"]
-        link = f"""../BicisUnicas/PagBici_{id_bici}.html"""
+        link = f"""BicisUnicas/{id_bici}.html"""
         # BICICLETA DE CARRETERA
         if value["tipo"] == "Bicicleta de carretera" or value["tipo"] == "Carretera e-bike":
             indextiposcarretera += f"""

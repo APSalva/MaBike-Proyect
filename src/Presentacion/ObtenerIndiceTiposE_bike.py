@@ -64,7 +64,7 @@ def ObtenerIndiceTiposEbike():
             tipo_bici = value["tipo"]
             precio_alquiler_bici = "15€"
             id_bici = value["_id"]
-            link = f"""../BicisUnicas/PagBici_{id_bici}.html"""
+            link = f"""BicisUnicas/{id_bici}.html"""   
             indextiposebike += f"""
                 <div class="columna-bici1">
                     <div class="foto">
