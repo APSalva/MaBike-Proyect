@@ -8,6 +8,10 @@ Para ello, utilizaremos **Mongo Atlas**, servicio de la base de datos MongoDB. L
 
 La web estática se generará a partir de **GitHub Pages**.
 
+![text-1670859066040](https://user-images.githubusercontent.com/117761833/207085803-469afebb-6491-4ca6-a849-275f9a6e8267.png)
+
+La idea de MaBike, surgió de "Mallorca y bike", en uno de los primeros trabajos de Base de Datos que nos fue encomendado. Al principió surgió como una broma, pero al final decidimos que era una buena decisión quedarnos con el nombre, sobretodo por el significado de la unión de las dos palabras.
+
 ## Conceptos Clave 
 
 * Python
@@ -37,7 +41,9 @@ La web estática se generará a partir de **GitHub Pages**.
  ### Python:
  * Después de tener la base de datos preparada, junto con una API funcional y diversas plantillas de HTML, empezamos a probar distintas formas de crear los programas para que se crearan los archivos HTML a través de python.
  * Entre las distintas formas se encontraban: Pymongo (el cual no tenía un funcionamiento correcto en nuestros equipos), Flask (sencillo pero no apto para el proyecto), también se testearon otros como Jinja2... Al final, decidímos hacerlo directamente sin emplear librerías externas.
-  * Creamos un CRUD para que facilitára la importación y exportación de datos.
+  * Creamos un CRUD para que facilitara la modificación e inserción de datos.
+  ![imagen](https://user-images.githubusercontent.com/117761833/207097565-2a7083b3-18cc-43c6-afc6-1d300aafec19.png)
+
   * Cuando estuvo todo el HTML y CSS en una fase prácticamente final, hicimos diferentes programas para que se generáran todos los HTML necesários para llevar acabo el proyecto.
   
  
