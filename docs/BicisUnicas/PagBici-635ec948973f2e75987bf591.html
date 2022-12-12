@@ -1,12 +1,4 @@
-# Importamos las funciones que vamos a utilizar
-from diccionario import *
-from CrearArchivo import *
 
-
-def CrearBiciUnica():
-    contador = 0
-    for value in Diccionario_JSON():
-        Pag_Bici_Unica = f"""
 <!DOCTYPE html>
 <html lang="es">
     <head>
@@ -39,59 +31,44 @@ def CrearBiciUnica():
                     </ul>
                 </nav>
             </header>
-        """
-        id_bici = value["_id"]
-        img_bici = value["img"]
-        nombre_bici = value["nombre"]
-        marca_bici = value["marca"]
-        precio_bici = value["precio"]
-        tipo_bici = value["tipo"]
-        material_bici = value["material"]
-        n_velocidades_bici = value["n_velocidades"]
-        peso_bici = value["peso"]
-        ubicacion_bici = value["ubicacion"]
-        volumen_ruedas_bici = value["volumen_ruedas"]
-        Pag_Bici_Unica += f"""
+        
         <div class="img-bici-div">
-            <img class="img-bici" src="{img_bici}" height="600" width="600"><br>
-            <p>{nombre_bici}</p>
-            <p class="precio">{precio_bici}</p>
+            <img class="img-bici" src="https://contents.mediadecathlon.com/p1958127/k$fcfdbc8364fe594f949269718870cbd4/sq/bicicleta-electrica-de-carretera-carbono-shimano-105-windee-negro.jpg?format=auto&f=800x0" height="600" width="600"><br>
+            <p>Bicicleta electrica de carretera carbono Shimano 105 Windee negro</p>
+            <p class="precio">3989.99</p>
         </div>
         <div>
             <table class="tabla-bici-unica">
                 <tr class="">
                     <th>Tipo</th>
-                    <td>{tipo_bici}</td>
+                    <td>Carretera e-bike</td>
                 </tr>
                 <tr>
                     <th>Marca</th>
-                    <td>{marca_bici}</td>
+                    <td>WINDEE</td>
                 </tr>
                 <tr>
                     <th>Material</th>
-                    <td>{material_bici}</td>
+                    <td>Full carbon</td>
                 </tr>
                 <tr>
                     <th>Número de velocidades</th>
-                    <td>{n_velocidades_bici}</td>
+                    <td>10</td>
                 </tr>
                 <tr>
                     <th>Peso</th>
-                    <td>{peso_bici}</td>
+                    <td>14.1</td>
                 </tr>
                 <tr>
                     <th>Ubicación</th>
-                    <td>{ubicacion_bici}</td>
+                    <td>Inca</td>
                 </tr>
                 <tr>
                     <th>Volumen ruedas</th>
-                    <td>{volumen_ruedas_bici}</td>
+                    <td>28</td>
                 </tr>
             </table>
         </div>
     </body>
 </html>  
-        """
-        CrearArchivo(f"""./docs/BicisUnicas/PagBici-{id_bici}.html""",Pag_Bici_Unica)
-
-CrearBiciUnica()
+        
