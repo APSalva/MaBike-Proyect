@@ -3,13 +3,12 @@ import requests
 import json
 # Acceder a la base de datos desde la API de Mongo
 def ObtenerJson():
-  url = "https://data.mongodb-api.com/ap/data-aeqmn/endpoint/data/v1/action/find"
+  url = "https://data.mongodb-api.com/app/data-aeqmn/endpoint/data/v1/action/find"
   payload = json.dumps({
       "collection": "bikes",
       "database": "bike_database",
       "dataSource": "bike",
       "projection":{
-        "_id" : 0
       }
   })
   headers = {
