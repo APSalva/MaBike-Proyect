@@ -174,7 +174,7 @@ ul.barraNav li a:hover{
     width: 100%;
     padding: 60px 0;
     text-align: center;
-    background: url(img/headerbanner9.jpg);
+    background: url('./Img/headerbanner9.jpg');
     background-size: 100%;
     color:white;
 }
@@ -182,7 +182,7 @@ div.header-index2{
     width: 100%;
     padding: 60px 0;
     text-align: center;
-    background: url(img/carretera-banner.jpg);
+    background: url('./Img/carretera-banner.jpg');
     background-size: 100%;
     color:white;
     background-size: cover;
@@ -191,7 +191,7 @@ div.header-index3{
     width: 100%;
     padding: 60px 0;
     text-align: center;
-    background: url(img/headermallorca5.jpg);
+    background: url('./Img/headermallorca5.jpg');
     background-size: 100%;
     color:white;
     background-size: cover;
@@ -200,7 +200,7 @@ div.header-index4{
     width: 100%;
     padding: 60px 0;
     text-align: center;
-    background: url(img/headermallorca4.jpg);
+    background: url('./Img/headermallorca4.jpg');
     background-size: 100%;
     color:white;
     background-size: cover;
@@ -209,7 +209,7 @@ div.header-index5{
     width: 100%;
     padding: 60px 0;
     text-align: center;
-    background: url(img/headermallorca8.jpg);
+    background: url('./Img/headermallorca8.jpg');
     background-size: 100%;
     color:white;
     background-size: cover;
@@ -518,8 +518,69 @@ img.carrito-vacio{
     margin:auto;
 }
 
-<<<<<<< HEAD
-.form-register {
+@media only screen 
+ and (device-width: 375px) 
+ and (device-height: 812px) 
+ and (orientation:portrait){
+    img.carrito-vacio{
+        display:none;
+    }
+ }
+ 
+ /*localizaciones*/
+
+div.maps{
+    display: grid;
+    justify-content: center;
+    
+}
+div.maps h2{
+    color:orange;
+    font-weight: 600;
+    font-size: 70px;
+    font-family: Rebelion, Verdana, Geneva, Tahoma, sans-serif;
+}
+ul.maps{
+    list-style-type: none;
+    text-align: center;
+}
+  
+ul.maps li {
+    text-align: center;
+    display:inline;
+  }
+
+ul.maps li a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif, 'Times New Roman';
+    text-decoration: none;
+    color: grey;
+    font-size: 19px;
+    justify-content: center;
+}
+ul.maps li a:hover{
+    color: orange;
+    text-decoration: none;
+}
+div.maps2{
+    display: grid;
+    justify-content: center;
+    margin: 30px;
+}
+@media only screen 
+ and (device-width: 375px) 
+ and (device-height: 812px) 
+ and (orientation:portrait){
+    div.maps h2{
+        color:orange;
+        font-weight: 600;
+        font-size: 30px;
+        font-family: Rebelion, Verdana, Geneva, Tahoma, sans-serif;
+    }
+ }
+
+ /*formulario*/
+ 
+ .form-register {
     width: 600px;
     height: 500px;
     background:#f59622;
@@ -623,7 +684,7 @@ img.carrito-vacio{
     margin-top: 100px;
     font-size: 50px;
 }
-=======
+
 @media only screen 
  and (device-width: 375px) 
  and (device-height: 812px) 
@@ -632,4 +693,3 @@ img.carrito-vacio{
         display:none;
     }
  }
->>>>>>> 73a8c2f1b4d2e99da437ced19e68b1c482fc4674
