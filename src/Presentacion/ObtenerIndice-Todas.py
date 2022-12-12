@@ -60,10 +60,12 @@ def ObtenerIndiceTodas():
         nombre_bici = value["nombre"]
         tipo_bici = value["tipo"]
         precio_alquiler = "15€"
+        id_bici = value["_id"]
+        link = f"""/docs/BicisUnicas/PagBici_{id_bici}.html"""
         indicetodas += f"""
                 <div class="columna-bici1">
                     <div class="foto">
-                        <a href=""><img src="{img_bici}" width="250px" height="250px"></a>
+                        <a href="{link}"><img src="{img_bici}" width="250px" height="250px"></a>
                         <a href=""><h4>{nombre_bici}</h4></a>
                         <br>
                         <h4>Precio de alquiler</h4>    
