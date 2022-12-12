@@ -92,6 +92,6 @@ def CrearBiciUnica():
     </body>
 </html>  
         """
-        CrearArchivo(f"""./docs/BicisUnicas/PagBici-{id_bici}.html""",Pag_Bici_Unica)
+        CrearArchivo(f"""./docs/BicisUnicas/{id_bici}.html""",Pag_Bici_Unica)
 
 CrearBiciUnica()
