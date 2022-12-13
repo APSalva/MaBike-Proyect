@@ -1,11 +1,12 @@
+from diccionario import Diccionario_JSON
 from CrearArchivo import * 
 
-def ObtenerFormulario():
-    formulario = f"""
+def ObtenerIndiceTodas():
+    indicetodas = f"""
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <title>MaBike-Formulario</title>
+        <title>MaBike-Todas las bicicletas</title>
         <meta charset="UTF-8">
         <meta name="description" content="La mejor web de bicis de Mallorca">
         <meta name="author" content="Juan Tur y Ana Pérez">
@@ -18,7 +19,7 @@ def ObtenerFormulario():
         <link rel='stylesheet' href="style1.css" type="text/css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
-    <body class="formulario">
+    <body>
         <header class="barraNav">
             <div class="logo">
                     <a href="index-Todas.html"><img src="Img/icon.png" weight="80px" height="80x" alt="icono-MaBike"></a>
@@ -34,19 +35,51 @@ def ObtenerFormulario():
                 </ul>
             </nav>
         </header>
-        <section class="form">
-            <div class="form-register">
-                <h4>Formulario Registro</h4>
-                <input class="controls" type="text" name="nombre" placeholder="Ingresa tu nombre">
-                <input class="controls" type="text" name="nombre" placeholder="Ingresa tus apellidos">
-                <input class="controls" type="email" name="correo" placeholder="Ingresa tu correo">
-                <input class="controls" type="password" name="correo" placeholder="Ingresa tu contraseña">
-                <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
-                <input class="botons "type="submit" value="Registrar">
-                <p><a href="#">Ya tengo Cuenta</a></p>
+        <div class="header-index">
+            <h1>MaBike</h1>
+            <p>Mallorca Rental Bike</p>
+        </div>
+        <div class="DecoLine">
+            <ul class="barraNav2">
+                <li><a href="index-carretera.html">Bicicletas de carretera</a></li>
+                <li><a href="index-MTB.html">MTB</a></li>
+                <li><a href="index-Ciudad.html">Bicicletas de Ciudad</a></li>
+                <li class="desplegable"><a href="index-EBikes.html">E-Bikes</a></li>
+            </ul>
+        </div>
+        <!--lista de bicis-->
+        <div class="segundo-header">
+            <p class="header-bicis">Todas las Bicicletas</p>
+        </div>
+        <div class="tienda">
+            <div class="fila">"""
+    for value in Diccionario_JSON():
+        img_bici = value["img"]
+        nombre_bici = value["nombre"]
+        tipo_bici = value["tipo"]
+        precio_alquiler = "15€"
+        id_bici = value["_id"]
+        link = f"""BicisUnicas/{id_bici}.html"""
+        indicetodas += f"""
+                <div class="columna-bici1">
+                    <div class="foto">
+                        <a href="{link}"><img src="{img_bici}" width="250px" height="250px"></a>
+                        <a href=""><h4>{nombre_bici}</h4></a>
+                        <br>
+                        <h4>Precio de alquiler</h4>    
+                        <ul class="bk1">
+                            <li><span><a href="">{tipo_bici}</a></span></li>
+                            <li><span class="precio"><a href="">{precio_alquiler}</a></span></li>     
+                        </ul>
+                    </div>
+                </div> """
+    indicetodas += f"""
             </div>
-        </section>
+        </div>                    
     </body>
+    <footer id="main-footer"><p> Creado por <a href="mailto:jtur@cifpfbmoll.eu"> Juan Tur </a> y <a href="mailto:aperezsalva@cifpfbmoll.eu"> Ana Pérez Salvà </a></p></footer>
 </html>"""
-    CrearArchivo("docs/formulario-registro.html",formulario)
-ObtenerFormulario()
+    
+    CrearArchivo("docs/index-Todas.html",indicetodas)
+
+ObtenerIndiceTodas()

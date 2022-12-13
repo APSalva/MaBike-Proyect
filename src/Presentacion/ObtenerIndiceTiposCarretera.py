@@ -27,11 +27,11 @@ def ObtenerIndiceTiposCarretera():
                 </div>
                 <nav class="barraNav">
                     <ul class="barraNav">
-                        <li><a href="../index.html"><img src="Img/play.png" wight="25px" height="25px" alt="Atrás"></a></li>
-                        <li><a href="../formulario-registro.html">Regístrate <img src="Img/registro.png" wight="25px" height="25px"alt="Registrate"></a></li>
-                        <li><a href="../Carrito-vacio.html">Carrito <img src="Img/carrito.png" wight="25px" height="25px" alt="Carrito"></a></li>
+                        <li><a href="index.html"><img src="Img/play.png" wight="25px" height="25px" alt="Atrás"></a></li>
+                        <li><a href="formulario-registro.html">Regístrate <img src="Img/registro.png" wight="25px" height="25px"alt="Registrate"></a></li>
+                        <li><a href="Carrito-vacio.html">Carrito <img src="Img/carrito.png" wight="25px" height="25px" alt="Carrito"></a></li>
                         <li><a href="https://www.correos.es/es/es/herramientas/localizador/envios">Envío a Domicilio <img src="Img/envio.png" wight="25px" height="25px" alt="Envio a Domicilio"></a></li>
-                        <li><a href="../localizaciones-palma.html">Recogida en Tienda <img src="Img/tienda.png" wight="25px" height="25px" alt="Recogida en Tienda"></a></li>
+                        <li><a href="localizaciones-palma.html">Recogida en Tienda <img src="Img/tienda.png" wight="25px" height="25px" alt="Recogida en Tienda"></a></li>
                         <li><a href="https://www.palma.cat/portal/BICIPALMA/RecursosWeb/DOCUMENTOS/9/12_47262_2.pdf">Términos y Condiciones <img src="Img/terminos.png" wight="25px" height="25px" alt="Términos y Condiciones"></a></li>
                     </ul>
                 </nav>
@@ -84,6 +84,5 @@ def ObtenerIndiceTiposCarretera():
     </body>
     <footer id="main-footer"><p> Creado por <a href="mailto:jtur@cifpfbmoll.eu"> Juan Tur </a> y <a href="mailto:aperezsalva@cifpfbmoll.eu"> Ana Pérez Salvà </a></p></footer>
 </html>"""
-    crear_archivo = open("docs/index-carretera.html","w", encoding="UTF-8")
-    crear_archivo.write(indextiposcarretera)
+    CrearArchivo("docs/index-carretera.html",indextiposcarretera)
 ObtenerIndiceTiposCarretera()
