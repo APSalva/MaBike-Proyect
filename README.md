@@ -31,7 +31,7 @@ La idea de MaBike, surgió de "Mallorca y bike", en uno de los primeros trabajos
 Para poder utilizar el programa se recomienda usar venv para poder tener instaladas todas las dependencias que necesita el programa.
 
 ## Uso
-Mabike es un programa que está pensado para crear 
+MaBike es un programa que está creado para crear una página web de alquiler de bicis. Para poder ejecutarlo tendras que ir a la carpeta src y ejecutar todos los programas que empiecen por obtener.
 
 ## Pasos en la Creación de la Web
 
@@ -68,10 +68,6 @@ Mabike es un programa que está pensado para crear
     
 ![3-1](https://user-images.githubusercontent.com/117761833/207128527-841bf58a-bde8-49a1-8dd9-aa7cc17cbf50.jpg)
 
-  ### Testing:
-  
-  --
-  --
   
  ## Clockify
  * Usamos Clockify para poder ver y calcular el tiempo dedicado al proyecto, de esta manera, podemos saber cuantos tokens tenemos. A partir de distintas etiquetas y colores, se pueden ver las distintas partes a las que se les ha dedicado tiempo y esfuerzo.
