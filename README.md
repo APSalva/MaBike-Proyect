@@ -21,19 +21,17 @@ La idea de MaBike, surgió de "Mallorca y bike", en uno de los primeros trabajos
 * GitHub Pages
 
 ## Requerimientos
+* Git 
+* Python
+* Requests
+* Pytest
 
- --
- --
 
 ## Instalacón
-
- --
- --
+Para poder utilizar el programa se recomienda usar venv para poder tener instaladas todas las dependencias que necesita el programa.
 
 ## Uso
-
- --
- --
+Mabike es un programa que está pensado para crear 
 
 ## Pasos en la Creación de la Web
 

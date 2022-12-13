@@ -1,4 +1,8 @@
-<!DOCTYPE html>
+from CrearArchivo import *
+from Presentacion.CrearArchivo import CrearArchivo
+
+def ObtenerIndice():
+    indice=f"""<!DOCTYPE html>
 <html lang="es">
     <head>
         <title>MaBike</title>
@@ -36,4 +40,6 @@
             </div>
         </div>
     </body>
-</html>
+</html>"""
+    CrearArchivo("docs/index.html",indice)
+ObtenerIndice()
