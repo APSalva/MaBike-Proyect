@@ -65,10 +65,6 @@ MaBike es un programa que está creado para crear una página web de alquiler de
   ![imagen](https://user-images.githubusercontent.com/117761833/207097565-2a7083b3-18cc-43c6-afc6-1d300aafec19.png)
 
   * Cuando estuvo todo el **HTML y CSS** en una fase prácticamente final, hicimos diferentes programas para que se generáran todos los HTML necesários para llevar acabo el proyecto.
-  
-   ### Diagrama del uso de la Web:
-   
-  ![Ilustración_sin_título](https://user-images.githubusercontent.com/117761833/207182462-3f8df80a-0497-49c0-bbc1-e223e5de019a.png)
 
   ### Metodología:
    * **DSDM** (Método de Desarrollo de Sistemas dinámicos) fue el método que empleamos, aunque de una manera simplificada y acorde a nuestros conocimientos y capacidades.
