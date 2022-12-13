@@ -90,6 +90,5 @@ def ObtenerBiciUnica():
     </body>
 </html>  
         """
-        CrearArchivo(f"""docs/BicisUnicas/{id_bici}.html""",Pag_Bici_Unica)
-
-ObtenerBiciUnica()
+        crear_archivo = open(f"""docs/BicisUnicas/{id_bici}.html""","w", encoding="UTF-8")
+        crear_archivo.write(Pag_Bici_Unica)

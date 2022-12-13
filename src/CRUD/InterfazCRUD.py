@@ -22,8 +22,14 @@ def InterfazCRUD():
     action = int(input("Elige una número del 1 al 5: "))
 
     if action == 1: FindBike()
-    elif action == 2: InsertOneBike()
-    elif action == 3: UpdateOneBike()
-    elif action == 4: DeleteOneBike()
+    elif action == 2: 
+        InsertOneBike()
+        print("La bicicleta se ha creado correctamente")
+    elif action == 3:
+        UpdateOneBike()
+        print("La bici ha sido actualizada correctamente")
+    elif action == 4:
+        DeleteOneBike()
+        print("La bici ha sido eliminada correctamente")
     elif action == 5: print("Adios!")
 InterfazCRUD()

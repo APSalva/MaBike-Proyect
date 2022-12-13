@@ -8,29 +8,29 @@
 # ObtenerJson()
 
 # # Crear index.html
-from Presentacion.ObtenerIndice import ObtenerIndice
+from ObtenerIndice import ObtenerIndice
 ObtenerIndice()
 
 # Crear index-Todas.html
-from Presentacion.ObtenerIndice_Todas import ObtenerIndiceTodas
+from ObtenerIndice_Todas import ObtenerIndiceTodas
 ObtenerIndiceTodas()
 
 # Crear los indices de los tipos de bicis
-from Presentacion.ObtenerIndiceTiposTodas import ObtenerIndiceTiposTodas
+from ObtenerIndiceTiposTodas import ObtenerIndiceTiposTodas
 ObtenerIndiceTiposTodas()
 
 # Obtener la página de la bicis unicas
-from Presentacion.ObtenerBiciUnica import ObtenerBiciUnica
+from ObtenerBiciUnica import ObtenerBiciUnica
 ObtenerBiciUnica()
 
 # Crear Formulario
-from Presentacion.ObtenerFormulario import ObtenerFormulario
+from ObtenerFormulario import ObtenerFormulario
 ObtenerFormulario()
 
 # Crear Carrito Vacio
-from Presentacion.ObtenerCarritoVacio import ObtenerCarritoVacio
+from ObtenerCarritoVacio import ObtenerCarritoVacio
 ObtenerCarritoVacio()
 
 # Crear pagina de las localizaciones
-from Presentacion.ObtenerLocalizaciones import ObtenerLocalizaciones
-ObtenerLocalizaciones()
+from ObtenerLocalizaciones import CrearPaginasLocalizaciones
+CrearPaginasLocalizaciones()

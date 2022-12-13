@@ -61,7 +61,8 @@ def ObtenerLocalizaciones(tipo):
         </div>
     </body>
 </html>"""
-    CrearArchivo(f"""docs/localizaciones-{tipo}.html""",PagLocalizaciones)
+    crear_archivo = open(f"""docs/localizaciones-{tipo}.html""","w", encoding="UTF-8")
+    crear_archivo.write(PagLocalizaciones)
 
 
 def CrearPaginasLocalizaciones():

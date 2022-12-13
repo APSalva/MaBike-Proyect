@@ -84,6 +84,6 @@ def ObtenerIndiceTiposCiudad():
     </body>
     <footer id="main-footer"><p> Creado por <a href="mailto:jtur@cifpfbmoll.eu"> Juan Tur </a> y <a href="mailto:aperezsalva@cifpfbmoll.eu"> Ana Pérez Salvà </a></p></footer>
 </html>"""
-    CrearArchivo("docs/index-Ciudad.html",indextiposciudad)
-
+    crear_archivo = open("docs/index-Ciudad.html","w", encoding="UTF-8")
+    crear_archivo.write(indextiposciudad)
 ObtenerIndiceTiposCiudad()

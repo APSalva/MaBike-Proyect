@@ -42,6 +42,8 @@ def ObtenerCarritoVacio():
     </body>
 </html>"""
     CrearArchivo("docs/Carrito-vacio.html",carritovacio)
+    crear_archivo = open("docs/Carrito-vacio.html","w", encoding="UTF-8")
+    crear_archivo.write(carritovacio)
 ObtenerCarritoVacio()
     
     

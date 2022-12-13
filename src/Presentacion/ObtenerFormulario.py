@@ -48,5 +48,6 @@ def ObtenerFormulario():
         </section>
     </body>
 </html>"""
-    CrearArchivo("docs/formulario-registro.html",formulario)
+    crear_archivo = open("docs/formulario-registro.html","w", encoding="UTF-8")
+    crear_archivo.write(formulario)
 ObtenerFormulario()

@@ -84,6 +84,7 @@ def ObtenerIndiceTiposMtb():
     </body>
     <footer id="main-footer"><p> Creado por <a href="mailto:jtur@cifpfbmoll.eu"> Juan Tur </a> y <a href="mailto:aperezsalva@cifpfbmoll.eu"> Ana Pérez Salvà </a></p></footer>
 </html>"""
-    CrearArchivo("docs/index-MTB.html",indextiposmtb)
+    crear_archivo = open("docs/index-MTB.html","w", encoding="UTF-8")
+    crear_archivo.write(indextiposmtb)
 
 ObtenerIndiceTiposMtb()
