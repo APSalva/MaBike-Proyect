@@ -19,7 +19,7 @@ def CrearBiciUnica():
         <meta name="keyword" content="bicis, ciclismo, MaBike, Mallorca">
         <base target="_blank">
         <link rel="shortcut icon" href="Img/icon.png">
-        <link rel='stylesheet' href="style1.css" type="text/css">
+        <link rel='stylesheet' href="../style1.css" type="text/css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
         <body>
